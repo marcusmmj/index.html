@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive Square</title>
+  <style>
+    .shape {
+      width: 200px;
+      height: 200px;
+      background-color: blue;
+      border-radius: 0px; 
+    }
+
+    @media (max-width: 900px) {
+      .shape {
+        border-radius: 20px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .shape {
+        border-radius: 100px; 
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="shape"></div>
+
+</body>
+</html>
