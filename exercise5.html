@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive Squares</title>
+  <style>
+    .container {
+      display: flex;
+      flex-direction: row; 
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    .square {
+      width: 100px;
+      height: 100px;
+      background-color: orange;
+      margin: 20px; 
+    }
+
+  
+    @media (max-width: 600px) {
+      .container {
+        flex-direction: column; 
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+  </div>
+
+</body>
+</html>
