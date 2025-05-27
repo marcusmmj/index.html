@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 6 - Fixed Grid</title>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      gap: 30px;
+      justify-content: center;
+      margin: 40px auto;
+    }
+
+    .grid-box {
+      width: 100px;
+      height: 100px;
+      background-color: green;
+    }
+
+    
+    @media (max-width: 600px) {
+      .grid-container {
+        gap: 10px;
+      }
+    }
+
+    
+    @media (max-width: 400px) {
+      .grid-container {
+        grid-template-columns: 100%;
+        place-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Exercise 6</h2>
+
+  <div class="grid-container">
+    <div class="grid-box"></div>
+    <div class="grid-box"></div>
+    <div class="grid-box"></div>
+    <div class="grid-box"></div>
+    <div class="grid-box"></div>
+    <div class="grid-box"></div>
+    <div class="grid-box"></div>
+    <div class="grid-box"></div>
+    <div class="grid-box"></div>
+  </div>
+
+</body>
+</html>
